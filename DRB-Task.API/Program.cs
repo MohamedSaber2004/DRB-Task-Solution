@@ -13,6 +13,20 @@ namespace DRB_Task.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.WebHost.ConfigureKestrel(options =>
+            {
+                options.ListenAnyIP(5000); 
+                options.ListenAnyIP(5001, listenOptions =>
+                {
+                    listenOptions.UseHttps();
+                });
+            });
+
+            builder.Services.Configure<IISServerOptions>(options =>
+            {
+                options.AllowSynchronousIO = true;
+            });
+
             #region  Add services to the container.
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>
@@ -22,12 +36,35 @@ namespace DRB_Task.API
                 });
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(); 
+            
             builder.Services.AddDbContext<RouteScheduleDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings")["DatabaseConnection"]));
+                options.UseSqlServer(
+                    builder.Configuration.GetSection("ConnectionStrings")["DatabaseConnection"],
+                    sqlOptions =>
+                    {
+                        sqlOptions.EnableRetryOnFailure(
+                            maxRetryCount: 5,
+                            maxRetryDelay: TimeSpan.FromSeconds(30),
+                            errorNumbersToAdd: null);
+                        
+                        sqlOptions.CommandTimeout(60);
+                    }));
+            
             builder.Services.AddScoped<IDataSeeding, DataSeeding>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddAutoMapper(configAction: cfg => { },assemblies: typeof(AssemblyReference).Assembly);
+            
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
+
             builder.Services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.InvalidModelStateResponseFactory = context =>
@@ -48,28 +85,40 @@ namespace DRB_Task.API
 
             var app = builder.Build();
 
-            await app.SeedingDataToDbAsync();
+            try
+            {
+                await app.SeedingDataToDbAsync();
+            }
+            catch (Exception ex)
+            {
+                var logger = app.Services.GetRequiredService<ILogger<Program>>();
+                logger.LogError(ex, "Database seeding failed during startup. Application will continue without seeding.");
+                
+                if (app.Environment.IsDevelopment())
+                {
+                    logger.LogWarning("Seeding failed in development environment. Check your database connection.");
+                }
+            }
 
             #region Configure the HTTP request pipeline.
             app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-            if (app.Environment.IsDevelopment())
+            app.UseCors();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
             {
-                app.UseSwagger();
-                app.UseSwaggerUI(options =>
+                options.ConfigObject = new ConfigObject()
                 {
-                    options.ConfigObject = new ConfigObject() 
-                    { 
-                        DisplayRequestDuration = true
-                    };
+                    DisplayRequestDuration = true
+                };
 
-                    options.DocumentTitle = "Route Schedule API";
+                options.DocumentTitle = "Route Schedule API";
 
-                    options.DocExpansion(DocExpansion.None);
+                options.DocExpansion(DocExpansion.None);
 
-                    options.EnableFilter();
-                });
-            }
+                options.EnableFilter();
+            });
 
             app.UseHttpsRedirection();
             app.MapControllers(); 

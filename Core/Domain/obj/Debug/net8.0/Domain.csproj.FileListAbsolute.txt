@@ -9,3 +9,4 @@ E:\DRB Internship Task\DRB-Task Solution\Core\Domain\obj\Debug\net8.0\Domain.dll
 E:\DRB Internship Task\DRB-Task Solution\Core\Domain\obj\Debug\net8.0\refint\Domain.dll
 E:\DRB Internship Task\DRB-Task Solution\Core\Domain\obj\Debug\net8.0\Domain.pdb
 E:\DRB Internship Task\DRB-Task Solution\Core\Domain\obj\Debug\net8.0\ref\Domain.dll
+E:\DRB Internship Task\DRB-Task Solution\Core\Domain\obj\Debug\net8.0\Domain.sourcelink.json

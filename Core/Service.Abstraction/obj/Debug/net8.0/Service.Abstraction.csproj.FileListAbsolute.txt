@@ -15,3 +15,4 @@ E:\DRB Internship Task\DRB-Task Solution\Core\Service.Abstraction\obj\Debug\net8
 E:\DRB Internship Task\DRB-Task Solution\Core\Service.Abstraction\obj\Debug\net8.0\ref\Service.Abstraction.dll
 E:\DRB Internship Task\DRB-Task Solution\Core\Service.Abstraction\bin\Debug\net8.0\Domain.dll
 E:\DRB Internship Task\DRB-Task Solution\Core\Service.Abstraction\bin\Debug\net8.0\Domain.pdb
+E:\DRB Internship Task\DRB-Task Solution\Core\Service.Abstraction\obj\Debug\net8.0\Service.Abstraction.sourcelink.json

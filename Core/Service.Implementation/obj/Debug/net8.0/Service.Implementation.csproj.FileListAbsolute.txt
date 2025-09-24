@@ -17,3 +17,4 @@ E:\DRB Internship Task\DRB-Task Solution\Core\Service.Implementation\obj\Debug\n
 E:\DRB Internship Task\DRB-Task Solution\Core\Service.Implementation\obj\Debug\net8.0\refint\Service.Implementation.dll
 E:\DRB Internship Task\DRB-Task Solution\Core\Service.Implementation\obj\Debug\net8.0\Service.Implementation.pdb
 E:\DRB Internship Task\DRB-Task Solution\Core\Service.Implementation\obj\Debug\net8.0\ref\Service.Implementation.dll
+E:\DRB Internship Task\DRB-Task Solution\Core\Service.Implementation\obj\Debug\net8.0\Service.Implementation.sourcelink.json

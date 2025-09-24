@@ -13,3 +13,4 @@ E:\DRB Internship Task\DRB-Task Solution\Shared\bin\Debug\net8.0\Domain.dll
 E:\DRB Internship Task\DRB-Task Solution\Shared\bin\Debug\net8.0\Domain.pdb
 E:\DRB Internship Task\DRB-Task Solution\Shared\obj\Debug\net8.0\Shared.csproj.AssemblyReference.cache
 E:\DRB Internship Task\DRB-Task Solution\Shared\obj\Debug\net8.0\Shared.csproj.Up2Date
+E:\DRB Internship Task\DRB-Task Solution\Shared\obj\Debug\net8.0\Shared.sourcelink.json

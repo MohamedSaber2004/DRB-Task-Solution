@@ -149,7 +149,6 @@ E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\staticweb
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\staticwebassets.development.json
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\DRB-Task.68CE4284.Up2Date
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\DRB-Task.API.dll
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\refint\DRB-Task.API.dll
@@ -157,3 +156,7 @@ E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\DRB-Task.
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\DRB-Task.API.genruntimeconfig.cache
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\ref\DRB-Task.API.dll
 E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\bin\Debug\net8.0\AutoMapper.dll
+E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\DRB-Task.API.sourcelink.json
+E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\bin\Debug\net8.0\web.config
+E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\bin\Debug\net8.0\appsettings.Production.json
+E:\DRB Internship Task\DRB-Task Solution\DRB-Task.API\obj\Debug\net8.0\swae.build.ex.cache
