@@ -1,0 +1,117 @@
+[
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Alexandria",
+    "Distance": 221.0,
+    "EstimatedTime": "03:30:00",
+    "RouteStatus": "Active",
+    "DriverId": 1
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Giza",
+    "Distance": 20.5,
+    "EstimatedTime": "00:45:00",
+    "RouteStatus": "Completed",
+    "DriverId": 2
+  },
+  {
+    "StartLocation": "Alexandria",
+    "EndLocation": "Marsa Matrouh",
+    "Distance": 290.0,
+    "EstimatedTime": "04:15:00",
+    "DriverId": null
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Aswan",
+    "Distance": 879.0,
+    "EstimatedTime": "11:30:00",
+    "RouteStatus": "Active",
+    "DriverId": 4
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Luxor",
+    "Distance": 721.0,
+    "EstimatedTime": "09:15:00",
+    "DriverId": null
+  },
+  {
+    "StartLocation": "Alexandria",
+    "EndLocation": "Port Said",
+    "Distance": 238.0,
+    "EstimatedTime": "03:45:00",
+    "RouteStatus": "Active",
+    "DriverId": 5
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Suez",
+    "Distance": 134.0,
+    "EstimatedTime": "02:15:00",
+    "RouteStatus": "Completed",
+    "DriverId": 6
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Hurghada",
+    "Distance": 460.0,
+    "EstimatedTime": "06:00:00",
+    "DriverId": null
+  },
+  {
+    "StartLocation": "Luxor",
+    "EndLocation": "Aswan",
+    "Distance": 215.0,
+    "EstimatedTime": "03:00:00",
+    "RouteStatus": "Active",
+    "DriverId": 8
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Sharm El Sheikh",
+    "Distance": 503.0,
+    "EstimatedTime": "06:30:00",
+    "DriverId": null
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Mansoura",
+    "Distance": 120.0,
+    "EstimatedTime": "02:00:00",
+    "RouteStatus": "Active",
+    "DriverId": 2
+  },
+  {
+    "StartLocation": "Alexandria",
+    "EndLocation": "Damanhur",
+    "Distance": 60.0,
+    "EstimatedTime": "01:15:00",
+    "RouteStatus": "Completed",
+    "DriverId": 1
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Ismailia",
+    "Distance": 120.0,
+    "EstimatedTime": "02:00:00",
+    "DriverId": null
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Tanta",
+    "Distance": 94.0,
+    "EstimatedTime": "01:45:00",
+    "RouteStatus": "Active",
+    "DriverId": 4
+  },
+  {
+    "StartLocation": "Assiut",
+    "EndLocation": "Sohag",
+    "Distance": 115.0,
+    "EstimatedTime": "02:15:00",
+    "RouteStatus": "Completed",
+    "DriverId": 5
+  }
+]

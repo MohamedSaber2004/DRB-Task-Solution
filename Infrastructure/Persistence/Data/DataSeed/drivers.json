@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "Ahmed Hassan",
+    "LicenseType": "Public"
+
+  },
+  {
+    "Name": "Mohamed Ali",
+    "LicenseType": "Commercial"
+  },
+  {
+    "Name": "Omar Mahmoud",
+    "LicenseType": "Commercial",
+    "Availability": false
+  },
+  {
+    "Name": "Fatma Ibrahim",
+    "LicenseType": "Professional"
+  },
+  {
+    "Name": "Youssef Samir",
+    "LicenseType": "Private"
+  },
+  {
+    "Name": "Amira Nasser",
+    "LicenseType": "Motorcycle"
+  },
+  {
+    "Name": "Khaled Farouk",
+    "LicenseType": "Heavy Vehicle",
+    "Availability": false
+  },
+  {
+    "Name": "Nour Abdel Rahman",
+    "LicenseType": "Heavy Vehicle"
+  }
+]

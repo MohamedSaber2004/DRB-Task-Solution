@@ -1,0 +1,6 @@
+@DRB_Task.API_HostAddress = http://localhost:5172
+
+GET {{DRB_Task.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

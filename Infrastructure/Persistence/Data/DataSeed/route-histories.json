@@ -1,0 +1,86 @@
+[
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Alexandria",
+    "CompletedOn": "2024-08-15T14:30:00Z",
+    "DriverId": 1,
+    "RouteId": 1
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Giza",
+    "CompletedOn": "2024-08-20T11:45:00Z",
+    "DriverId": 2,
+    "RouteId": 2
+  },
+  {
+    "StartLocation": "Alexandria",
+    "EndLocation": "Port Said",
+    "CompletedOn": "2024-09-01T16:20:00Z",
+    "DriverId": 4,
+    "RouteId": 6
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Luxor",
+    "CompletedOn": "2024-09-05T13:10:00Z",
+    "DriverId": 5,
+    "RouteId": 5
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Suez",
+    "CompletedOn": "2024-09-08T18:00:00Z",
+    "DriverId": 6,
+    "RouteId": 7
+  },
+  {
+    "StartLocation": "Luxor",
+    "EndLocation": "Aswan",
+    "CompletedOn": "2024-09-12T10:25:00Z",
+    "DriverId": 8,
+    "RouteId": 9
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Mansoura",
+    "CompletedOn": "2024-09-10T09:15:00Z",
+    "DriverId": 2,
+    "RouteId": 11
+  },
+  {
+    "StartLocation": "Alexandria",
+    "EndLocation": "Damanhur",
+    "CompletedOn": "2024-09-14T15:30:00Z",
+    "DriverId": 1,
+    "RouteId": 12
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Tanta",
+    "CompletedOn": "2024-09-16T12:45:00Z",
+    "DriverId": 4,
+    "RouteId": 14
+  },
+  {
+    "StartLocation": "Assiut",
+    "EndLocation": "Sohag",
+    "CompletedOn": "2024-09-18T14:20:00Z",
+    "DriverId": 5,
+    "RouteId": 15
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Zagazig",
+    "CompletedOn": "2024-09-11T08:30:00Z",
+    "DriverId": 6,
+    "RouteId": null
+  },
+  {
+    "StartLocation": "Cairo",
+    "EndLocation": "Beni Suef",
+    "CompletedOn": "2024-09-13T17:10:00Z",
+    "DriverId": 8,
+    "RouteId": null
+  }
+]
