@@ -108,8 +108,7 @@ The system uses Entity Framework Core with the following main entities:
    ```
 
 3. **Access the API:**
-   - Swagger UI: `https://localhost:7xxx/swagger`
-   - API Base URL: `https://localhost:7xxx/api`
+   - Swagger URL: `http://192.168.1.7/swagger`
 
 ## 📋 Data Transfer Objects (DTOs)
 
