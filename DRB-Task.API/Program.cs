@@ -13,13 +13,11 @@ namespace DRB_Task.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Configure Kestrel to use PORT environment variable (for Railway/Cloud deployments)
+            var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
             builder.WebHost.ConfigureKestrel(options =>
             {
-                options.ListenAnyIP(5000); 
-                options.ListenAnyIP(5001, listenOptions =>
-                {
-                    listenOptions.UseHttps();
-                });
+                options.ListenAnyIP(int.Parse(port));
             });
 
             builder.Services.Configure<IISServerOptions>(options =>

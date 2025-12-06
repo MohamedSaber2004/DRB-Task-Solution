@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Build outputs
+**/bin/
+**/obj/
+**/out/
+
+# IDE and editor folders
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+**/packages/
+
+# Test results
+**/TestResults/
+
+# Docker
+**/Dockerfile*
+**/docker-compose*
+**/.dockerignore
+
+# Misc
+**/*.md
+**/LICENSE
+**/.editorconfig
+*.log

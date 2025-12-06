@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # SQL Server Database Service
+  database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: drb-database
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong@Password123
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    networks:
+      - drb-network
+    healthcheck:
+      test: /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "YourStrong@Password123" -C -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    restart: unless-stopped
+
+  # API Service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: drb-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DatabaseConnection=Server=database;Database=DRB.InternDb;User Id=sa;Password=YourStrong@Password123;TrustServerCertificate=True;
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - drb-network
+    restart: unless-stopped
+
+networks:
+  drb-network:
+    driver: bridge
+
+volumes:
+  sqlserver-data:
+    driver: local
